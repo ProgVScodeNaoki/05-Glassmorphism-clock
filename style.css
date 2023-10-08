@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*:not(1){
+    font-family: "Roboto Mono", monospace;
+    color: #ffffff;
+}
+
+body{
+    height: 100vh;
+    background-color: #02070d;
+}
+
+.box{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.container{
+    width: 320px;
+}
+
+.clock{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.06);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    padding: 50px 25px;
+    box-shadow: 0 25px 23px rgba(255, 255, 255, 0.06);
+    border-radius: 8px;
+}
+
+.shape1{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    background: linear-gradient(135deg, #00ff4c, #00e1ff);
+    border-radius: 50%;
+    bottom: 130px;
+    right: -50px;
+    z-index: -1;
+}
+
+.shape2{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    background: linear-gradient(135deg, #426cf8, #3ebd0f);
+    border-radius: 50%;
+    top: 100px;
+    left: -50px;
+    z-index: -1;
+}
+
+.wrapper{
+    text-align: center;
+}
+
+#time{
+    font-size: 40px;
+    display: inline-block;
+    color: #00ffbf;
+}
+
+#day{
+    position: relative;
+    font-size: 23px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #4800ff;
+    text-align: center;
+}
+
+#midday{
+    display: inline-block;
+    font-size: 30px;
+    color: #00a6ff;
+}
+
+i.fab{
+    color: #ff0000;
+}
